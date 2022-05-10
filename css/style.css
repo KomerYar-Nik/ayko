@@ -1,10 +1,7 @@
-@import "./assets/scss/variables.scss";
- @import "./assets/scss/index.scss";
- @import "./assets/scss/sign.scss";
- @import "./assets/scss/header.scss";
+
  @font-face {
 	 font-family: Roboto;
-	 src: url("./assets/fonts/fonts.ttf");
+	 src: url("../fonts/fonts.ttf");
 	 font-weight: 400;
 }
  body {
@@ -142,7 +139,7 @@
 	 justify-content: center;
 	 flex-direction: column;
 }
- .card-info-item self:not(&:last-child) {
+ .card-info-item:not(card-info-item:last-child) {
 	 margin-right: 62px;
 }
  .card-info-item__text {
@@ -200,7 +197,7 @@
 	 margin: 0 auto;
 }
  .header {
-	 background: url("/img/background.png") no-repeat;
+	 background: url("../img/background.png") no-repeat;
 	 background-size: cover;
 	 height: 100vh;
 }
